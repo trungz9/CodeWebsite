@@ -1,0 +1,10 @@
+.globalnav ul {
+  list-style: none;   /* bỏ dấu chấm trước li */
+  padding: 0;
+  margin: 0;
+}
+
+.globalnav li {
+  display: inline-block; /* các mục nằm ngang */
+  margin-right: 20px;    /* khoảng cách giữa các mục */
+}
