@@ -1,22 +1,67 @@
+/* Phiên bản 1: Sử dụng Flexbox (khuyến nghị) */
 .header-inner {
-    display: inline-block;
-    justify-content: space-between; /* căn giữa theo chiều ngang */
+    display: flex;
+    justify-content: space-between; /* căn logo bên trái, menu bên phải */
     align-items: center;            /* căn giữa theo chiều dọc */
+    padding: 10px 0;
+    height: 100px;
 }
 
 .logo img {
-    display: inline-block;
     height: 80px;
-
+    display: block; /* loại bỏ khoảng trắng dưới ảnh */
 }
 
 .globalnav ul {
-  list-style: none;   /* bỏ dấu chấm trước li */
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* sử dụng flex cho menu */
 }
 
 .globalnav li {
-    display: inline-block;   /* hiển thị các mục theo hàng ngang */
-    margin-right: 20px;    /* khoảng cách giữa các mục */
+    margin-left: 20px; /* thay margin-right bằng margin-left */
+}
+
+.globalnav li:first-child {
+    margin-left: 0; /* bỏ margin cho item đầu tiên */
+}
+
+/* ===================================== */
+
+/* Phiên bản 2: Giữ inline-block (nếu bạn muốn) */
+.header-inner-inline {
+    text-align: center; /* để căn giữa nếu cần */
+    padding: 10px 0;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo img {
+    height: 80px;
+    vertical-align: middle;
+}
+
+.globalnav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.globalnav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.globalnav li {
+    display: inline-block;
+    vertical-align: middle; /* thêm dòng này để căn giữa */
+    margin-left: 20px;
+}
+
+.globalnav li:first-child {
+    margin-left: 0;
 }
