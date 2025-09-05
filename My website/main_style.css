@@ -1,3 +1,15 @@
+.header-inner {
+    display: inline-block;
+    justify-content: space-between; /* căn giữa theo chiều ngang */
+    align-items: center;            /* căn giữa theo chiều dọc */
+}
+
+.logo img {
+    display: inline-block;
+    height: 80px;
+
+}
+
 .globalnav ul {
   list-style: none;   /* bỏ dấu chấm trước li */
   padding: 0;
@@ -5,6 +17,6 @@
 }
 
 .globalnav li {
-  display: inline-block; /* các mục nằm ngang */
-  margin-right: 20px;    /* khoảng cách giữa các mục */
+    display: inline-block;   /* hiển thị các mục theo hàng ngang */
+    margin-right: 20px;    /* khoảng cách giữa các mục */
 }
