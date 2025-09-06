@@ -2,11 +2,21 @@
     box-sizing: border-box;
 }
 
+.logo {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    zoom: 0.8;
+}
+
 .logo img {
     display: block;
     width: 80px;
-    height:80px;
+    height: 80px;
     object-fit: cover;
     object-position: 62% center;
     border: none;
+    transform: scale(2.5);
+    overflow: hidden;
 }
+
