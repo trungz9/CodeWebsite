@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+.header-inner {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
 .logo {
     width: 80px;
     height: 80px;
@@ -20,3 +25,24 @@
     overflow: hidden;
 }
 
+.header-inner {
+    padding: 16px;
+}
+
+.globalnav {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 230px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block; /* xếp li nằm ngang */
+}
