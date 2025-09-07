@@ -4,12 +4,20 @@
     padding: 0;
 }
 
+body {
+    min-width: 600px; /* không cho co nhỏ hơn 1200px */
+}
+
+
 header {
     display: block;
     width: 100%;
-    background-color: hsla(0, 0%, 100%, 0.219); /* nền đen */
-    padding-bottom : 7px;  /* khoảng trống phía dưới */
+    background: hsla(0, 0%, 100%, 0.877); /* nền đen */
     border-bottom: 5px solid hsl(0, 75%, 42%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 
@@ -133,12 +141,14 @@ a {
 
 /*----------------------------------------------*/
 
-.slick-list_draggable {
-    background-image: url(trong_ta_trang.png);
-    background-size: cover;
-    background-position: center center;
-    color: #fff;
-    flex-direction: column;
-    align-items: flex-start;
+.slick-track {
+    position: relative;
+}
+
+.slick-track img {
+    width: 100%;
+    background: url("trong_ta_trang.png") top center/cover no-repeat;
+    height: auto;
     display: block;
 }
+
