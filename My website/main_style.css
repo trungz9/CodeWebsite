@@ -4,10 +4,15 @@
     padding: 0;
 }
 
-.header {
+header {
     display: block;
     width: 100%;
+    background-color: hsla(0, 0%, 100%, 0.219); /* nền đen */
+    padding-bottom : 7px;  /* khoảng trống phía dưới */
+    border-bottom: 5px solid hsl(0, 75%, 42%);
 }
+
+
 
 .header-inner {
     display: flex;
@@ -72,6 +77,7 @@ ul {
 
 li {
     display: flex;
+    padding-right: 20px;
 }
 
 
@@ -122,4 +128,17 @@ a {
     color: hsl(0, 75%, 42%);
     align-items: center;
     justify-content: center;
+}
+
+
+/*----------------------------------------------*/
+
+.slick-list_draggable {
+    background-image: url(trong_ta_trang.png);
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    display: block;
 }
