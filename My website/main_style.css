@@ -1,22 +1,34 @@
 *    {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
     display: block;
+    width: 100%;
 }
 
 .header-inner {
     display: flex;
     padding: 16px;
+    width: 100%;
 }
 
-.header nav {
-    display: inline-block;
+.headernav {
+    display: flex;
+    width: 100%;
+}
+
+.nav-inner {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .logo {
     display: flex;
+    text-align: left;
     width: 80px;
     height: 80px;
     overflow: hidden;
@@ -24,8 +36,8 @@
 }
 
 .logo img {
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: 62% center;
     border: none;
@@ -37,16 +49,12 @@
 
 /*khong dung headernav */
 
-.nav-inner {
-    display: flex;
-    text-align: left;
-}
 
 .globalnav {
     padding-top: 23px;
     padding-bottom: 23px;
-    width: 350px;
-    margin: 0 auto;
+    width: 500px;
+    margin: 0 20px;
     display: inline-block;
     font-size: 18px;
     font-weight: bold;
@@ -63,18 +71,55 @@ ul {
 }
 
 li {
-    display: inline-block;
+    display: flex;
 }
 
 
 .menu-Global {
-    display: inline-block;
+    display: flex;
 }
 
 .sns {
     display: flex;
-    max-width: 200px;
+    justify-content: flex-end;
+    width: 128px;
     height: 64px;
     margin: 0;
     padding: 0;
+}
+
+.sns ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.sns li {
+    width: 50%;
+    display: flex;
+    height: 64px;
+}
+
+
+.sns li a {
+    display: flex;
+    max-width: 100%;
+}
+
+.sns svg {
+    flex: 1;
+}
+
+.i {
+    font-size: inherit; /* lấy font-size từ cha */
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none; /* Bỏ underline */
+    color: hsl(0, 75%, 42%);
+    align-items: center;
+    justify-content: center;
 }
