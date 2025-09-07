@@ -7,7 +7,7 @@
 }
 
 .header-inner {
-    display: inline-block; 
+    display: flex;
     padding: 16px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .logo {
-    display: inline-block;
+    display: flex;
     width: 80px;
     height: 80px;
     overflow: hidden;
@@ -38,17 +38,19 @@
 /*khong dung headernav */
 
 .nav-inner {
-    display: inline-block;
+    display: flex;
     text-align: left;
 }
 
 .globalnav {
-    padding-top: 18px;
-    padding-bottom: 18px;
-    width: 211px;
-    height: 60px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    width: 350px;
     margin: 0 auto;
     display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Questrial, sans-serif;
 }
 
 /* text-menu */
@@ -60,18 +62,19 @@ ul {
     padding: 0;
 }
 
-ul li {
+li {
     display: inline-block;
 }
 
 
 .menu-Global {
     display: inline-block;
-    width: 50px;
 }
 
 .sns {
-    display: inline-block;
+    display: flex;
+    max-width: 200px;
+    height: 64px;
     margin: 0;
     padding: 0;
 }
