@@ -2,12 +2,21 @@
     box-sizing: border-box;
 }
 
+.header {
+    display: block;
+}
+
 .header-inner {
+    display: inline-block; 
+    padding: 16px;
+}
+
+.header nav {
     display: inline-block;
-    vertical-align: middle; 
 }
 
 .logo {
+    display: inline-block;
     width: 80px;
     height: 80px;
     overflow: hidden;
@@ -15,7 +24,6 @@
 }
 
 .logo img {
-    display: block;
     width: 80px;
     height: 80px;
     object-fit: cover;
@@ -25,24 +33,45 @@
     overflow: hidden;
 }
 
-.header-inner {
-    padding: 16px;
+/* logo */
+
+/*khong dung headernav */
+
+.nav-inner {
+    display: inline-block;
+    text-align: left;
 }
 
 .globalnav {
     padding-top: 18px;
     padding-bottom: 18px;
-    width: 230px;
+    width: 211px;
     height: 60px;
     margin: 0 auto;
+    display: inline-block;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+/* text-menu */
+
+ul {    
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 ul li {
-  display: inline-block; /* xếp li nằm ngang */
+    display: inline-block;
+}
+
+
+.menu-Global {
+    display: inline-block;
+    width: 50px;
+}
+
+.sns {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
 }
