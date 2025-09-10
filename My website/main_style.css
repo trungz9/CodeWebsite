@@ -36,8 +36,9 @@ header {
 
 .nav-inner {
     display: flex;
+    justify-content: space-between; 
+    align-items: center; 
     width: 100%;
-    justify-content: space-between;
 }
 
 .logo {
@@ -97,10 +98,11 @@ li {
 .sns {
     display: flex;
     justify-content: flex-end;
-    width: 128px;
+    width: 192px;
     height: 64px;
     margin: 0;
     padding: 0;
+    margin-left:auto;
 }
 
 .sns ul {
@@ -115,6 +117,7 @@ li {
     width: 50%;
     display: flex;
     height: 64px;
+
 }
 
 
@@ -137,6 +140,7 @@ a {
     color: hsl(0, 75%, 42%);
     align-items: center;
     justify-content: center;
+    display: flex;
 }
 
 
