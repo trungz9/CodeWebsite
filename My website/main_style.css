@@ -69,7 +69,6 @@ header {
 .globalnav {
     padding-top: 23px;
     padding-bottom: 23px;
-    width: 500px;
     margin: 0 20px;
     display: inline-block;
     font-size: 18px;
@@ -77,7 +76,13 @@ header {
     font-family: Questrial, sans-serif;
 }
 
-/* text-menu */
+#menu-Global {
+  display: flex;   /* cho các <li> nằm ngang */
+  gap: 10px;       /* khoảng cách giữa các <li> */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 ul {    
     display: flex;
@@ -88,7 +93,6 @@ ul {
 
 li {
     display: flex;
-    padding-right: 20px;
 }
 
 
@@ -97,7 +101,8 @@ li {
 }
 
 .sns {
-    margin-left: auto; /* Đẩy sang phải */
+    display: flex;
+    margin-left: auto;  /* Đẩy sang phải */
     width: auto; /* Thay vì cố định 192px */
     min-width: 128px; /* Đảm bảo kích thước tối thiểu */
 }
@@ -109,6 +114,7 @@ li {
     width: 100%;
     margin: 0;
     padding: 0;
+    gap: 10px;
 }
 
 .sns li {
@@ -179,10 +185,20 @@ article {
 
 
 
+/*----------------------------------*/
+.globalnav ul li {
+    color: hsl(0, 75%, 42%);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
 
+.globalnav ul li:hover {
+    color: hsl(0, 0%, 0%); /* đổi màu khi hover */
+}
 
-
-
+.sns a:hover {
+  color: hsl(0, 0%, 0%); /* đổi màu khi hover */
+}
 
 
 
