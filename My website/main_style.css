@@ -162,20 +162,36 @@ a {
 }
 
 /*----------------------------------------------*/
+.section-titlecenter {
+    display: flex;
+    justify-content: space-between;
+}
 
 .inner-1200inner-wrap-30 {
-    display: flex;      /* chia thành 2 cột */
-    justify-content: space-between; /* đẩy xa nhau */
-    padding: 30px;
-    text-decoration: underline;             /* gạch chân */
-    border-bottom: 3px solid hsl(0, 75%, 42%);
-    padding-bottom: 4px; /* tạo khoảng cách giữa chữ và gạch */
+    display: flex;
+    justify-content: space-between;      /* chia thành 2 cột */ /* đẩy xa nhau */
+    padding: 30px;            /* gạch chân */
+    font-weight: bold;
+    width: 100%;
+    font-family: Questrial, sans-serif;
 }
 
-article {
-    width: 38%;
-    padding: 20px;
+.section-titlecenter {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;  
 }
+
+.thumb {
+    display: inline-block;
+    padding: 30px;
+    width: 100%;
+    max-width: 100%;  /* ảnh không vượt quá kích thước cha */
+    height: auto;     /* chiều cao tự động theo tỷ lệ */
+    display: block;   /* tránh khoảng trắng dư */
+    margin-top: 30px;
+}
+
 
 
 
@@ -197,9 +213,13 @@ article {
 }
 
 .sns a:hover {
-  color: hsl(0, 0%, 0%); /* đổi màu khi hover */
+    color: hsl(0, 0%, 0%); /* đổi màu khi hover */
 }
 
+.inner-1200inner-wrap-30 h2:hover {
+    color: hsl(0, 75%, 42%); /* đổi màu khi hover */
+    cursor: pointer;
+}
 
 
 
