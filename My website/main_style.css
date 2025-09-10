@@ -13,8 +13,6 @@ body {
 header {
     display: block;
     width: 100%;
-    background: hsla(0, 0%, 100%, 0.877); /* nền đen */
-    border-bottom: 5px solid hsl(0, 75%, 42%);
     position: absolute;
     top: 0;
     left: 0;
@@ -25,9 +23,11 @@ header {
 
 .header-inner {
     display: flex;
-    position: absolute;;
+    position: absolute;
     padding: 16px;
     width: 100%;
+    background: hsla(0, 0%, 100%, 0.438);
+    border-bottom: 5px solid hsl(0, 75%, 42%);
 }
 
 .headernav {
@@ -97,13 +97,11 @@ li {
 }
 
 .sns {
-    display: inline-block;
-    justify-content: flex-end;
-    width: 192px;
-    height: 64px;
-    margin: 0;
-    padding: 0;
+    margin-left: auto; /* Đẩy sang phải */
+    width: auto; /* Thay vì cố định 192px */
+    min-width: 128px; /* Đảm bảo kích thước tối thiểu */
 }
+
 
 .sns ul {
     display: flex;
@@ -152,7 +150,7 @@ a {
 
 .slick-track img {
     width: 100%;
-    background: url("trong_ta_trang.png") top center/cover no-repeat;
+    background: url("dong_nghiep_mat_ngu.png") top center/cover no-repeat;
     height: auto;
     display: block;
 }
@@ -160,16 +158,43 @@ a {
 /*----------------------------------------------*/
 
 .inner-1200inner-wrap-30 {
-  display: flex;      /* chia thành 2 cột */
-  justify-content: space-between; /* đẩy xa nhau */
-  padding: 30px;
-  text-decoration: underline;             /* gạch chân */
-  text-decoration-color: hsl(0, 75%, 42%);     /* màu gạch chân */
-  text-decoration-thickness: 3px;         /* độ dày */
-  text-underline-offset: 8px; 
+    display: flex;      /* chia thành 2 cột */
+    justify-content: space-between; /* đẩy xa nhau */
+    padding: 30px;
+    text-decoration: underline;             /* gạch chân */
+    border-bottom: 3px solid hsl(0, 75%, 42%);
+    padding-bottom: 4px; /* tạo khoảng cách giữa chữ và gạch */
 }
 
 article {
     width: 38%;
     padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------*/
+
+@media (max-width: 768px) {
+  p {
+    line-height: 2;   /* chữ thoáng hơn */
+  }
+  .article {
+    margin-bottom: 30px; /* khối cách xa nhau hơn */
+  }
 }
