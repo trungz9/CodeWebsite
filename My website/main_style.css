@@ -25,6 +25,7 @@ header {
 
 .header-inner {
     display: flex;
+    position: absolute;;
     padding: 16px;
     width: 100%;
 }
@@ -96,13 +97,12 @@ li {
 }
 
 .sns {
-    display: flex;
+    display: inline-block;
     justify-content: flex-end;
     width: 192px;
     height: 64px;
     margin: 0;
     padding: 0;
-    margin-left:auto;
 }
 
 .sns ul {
