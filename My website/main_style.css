@@ -193,7 +193,17 @@ a {
 }
 
 
+/*----------------------------------*/
 
+.news-items {
+    margin: 20px;
+}
+
+
+
+.article {
+    margin: 20px; /* khoảng cách giữa các bài viết */
+}
 
 
 
