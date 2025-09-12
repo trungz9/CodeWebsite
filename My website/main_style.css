@@ -153,8 +153,11 @@ a {
 .slick-track {
     position: relative;
 }
+.slide_slick-slide {
+    position: relative;
+}
 
-.slick-track img {
+.slide_slick-slide img {
     width: 100%;
     background: url("dong_nghiep_mat_ngu.png") top center/cover no-repeat;
     height: auto;
