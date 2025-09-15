@@ -162,6 +162,7 @@ a {
     background: url("dong_nghiep_mat_ngu.png") top center/cover no-repeat;
     height: auto;
     display: block;
+    object-fit: cover;
 }
 
 /*----------------------------------------------*/
