@@ -21,3 +21,13 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % slides.length;
   showSlide(currentIndex);
 }, 5000);
+
+// khởi động slide đầu tiên
+showSlide(currentIndex);
+
+dots.forEach(dot => {
+  dot.addEventListener("click", () => {
+    let index = parseInt(dot.getAttribute("data-index"));
+    showSlide(index);
+  });
+});
