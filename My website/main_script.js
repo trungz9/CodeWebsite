@@ -1,33 +1,65 @@
+let slideIndex = 0;
 let slides = document.querySelectorAll(".slide_slick-slide");
-let currentIndex = 0;
+let dots = document.querySelectorAll(".dot");
+let interval = null; // để quản lý auto-play
 
 function showSlide(index) {
-  slides.forEach(slide => slide.classList.remove("active"));
-  slides[index].classList.add("active");
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) slide.classList.add("active");
+  });
+  dots.forEach((dot, i) => {
+    dot.classList.remove("active");
+    if (i === index) dot.classList.add("active");
+  });
+  slideIndex = index;
 }
 
-document.querySelector(".next").addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % slides.length;
-  showSlide(currentIndex);
-});
+function nextSlide() {
+  slideIndex = (slideIndex + 1) % slides.length;
+  showSlide(slideIndex);
+}
 
-document.querySelector(".prev").addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  showSlide(currentIndex);
-});
+function prevSlide() {
+  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+  showSlide(slideIndex);
+}
 
-// tự động chạy
-setInterval(() => {
-  currentIndex = (currentIndex + 1) % slides.length;
-  showSlide(currentIndex);
-}, 5000);
-
-// khởi động slide đầu tiên
-showSlide(currentIndex);
-
+// gán sự kiện click cho dots
 dots.forEach(dot => {
   dot.addEventListener("click", () => {
     let index = parseInt(dot.getAttribute("data-index"));
     showSlide(index);
+    resetAutoPlay(); // reset lại thời gian khi người dùng click
   });
+});
+
+// auto-play
+function startAutoPlay() {
+  interval = setInterval(nextSlide, 5000); // đổi slide mỗi 3 giây
+}
+
+function stopAutoPlay() {
+  clearInterval(interval);
+}
+
+function resetAutoPlay() {
+  stopAutoPlay();
+  startAutoPlay();
+}
+
+// bắt đầu chạy khi load trang
+startAutoPlay();
+
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+
+prevBtn.addEventListener("click", () => {
+  prevSlide();
+  resetAutoPlay(); // reset auto-play mỗi khi bấm
+});
+
+nextBtn.addEventListener("click", () => {
+  nextSlide();
+  resetAutoPlay();
 });
