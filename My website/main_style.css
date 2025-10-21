@@ -19,8 +19,6 @@ header {
     z-index: 2;
 }
 
-
-
 .header-inner {
     display: flex;
     position: absolute;
