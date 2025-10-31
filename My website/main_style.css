@@ -83,7 +83,6 @@ header {
 }
 
 ul {    
-    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -286,8 +285,103 @@ a {
     cursor: pointer;
 }
 
+/*----------------------------------------------*/
+#footer {
+    font: Questrial, sans-serif;
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+    margin: 30px;   
+    box-shadow: 0 0 0 20px lightblue;
+    background: lightblue;
+    opacity: 0.9;
+}
+
+.footer-inner {
+    display: flex;              
+    justify-content: space-between; 
+    align-items: flex-start;   
+    width: 100%;
+    max-width: 1200px;         
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-info {
+    margin-bottom: 0;
+    text-align: center;
+    width: auto;
+    float: none;
+    display: inline-block;
+}
+
+.footer-logo {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    unicode-bidi: isolate;
+    width: 50%;
+    text-align: left;
+}
+
+#company p {
+    display: block;
+}
+
+.logo-text img {
+    width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+    zoom: 1;
+}
+
+.footer-logo,
+.footer-sitemap {
+  width: 50%;                 
+}
+
+.footer-sitemap {
+  display: block;
+  flex-direction: column;
+  align-items: flex-end;       
+}
 
 
+.section-title {
+    display: block;
+    width: 100%;
+}
+
+.footer-sitemap2 {
+    display: block;              
+    justify-content: space-between; 
+    align-items: flex-start;   
+    width: 100%;
+    max-width: 1200px;         
+
+}
+
+.pagetop,
+.copyright {
+  width: 50%;                 
+}
+
+.pagetop {
+    margin: 30px; 
+    text-align: left;
+    right: 8.333333333333333%;
+    display: flex;
+    font-size: 15px;
+}
+
+.copyright {
+    display: flex;
+    font-size: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
 
 /*----------------------------------------------*/
 
@@ -298,4 +392,7 @@ a {
   .article {
     margin-bottom: 30px; /* khối cách xa nhau hơn */
   }
+      #footer .section-title > * {
+        border-width: 2px;
+}
 }
