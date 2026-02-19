@@ -25,7 +25,7 @@ header {
     padding: 16px;
     width: 100%;
     background: hsla(0, 0%, 100%, 0.438);
-    border-bottom: 5px solid hsl(0, 75%, 42%);
+    border-bottom: 5px solid hsla(0, 100%, 93%, 0.788);
 }
 
 .headernav {
@@ -266,13 +266,13 @@ a {
 
 
 /*----------------------------------*/
-.globalnav ul li {
+.globalnav ul li a {
     color: hsl(0, 75%, 42%);
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
-.globalnav ul li:hover {
+.globalnav ul li:hover a {
     color: hsl(0, 0%, 0%); /* đổi màu khi hover */
 }
 
@@ -280,9 +280,20 @@ a {
     color: hsl(0, 0%, 0%); /* đổi màu khi hover */
 }
 
+.category a:hover {
+    color: hsl(0, 0%, 0%); /* đổi màu khi hover */
+}
+
 .inner-1200inner-wrap-30 h2:hover {
     color: hsl(0, 75%, 42%); /* đổi màu khi hover */
     cursor: pointer;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white; /* rất quan trọng để không bị trong suốt */
 }
 
 /*----------------------------------------------*/
@@ -382,6 +393,16 @@ a {
     bottom: 0;
 
 }
+
+/*-------------------------------ABOUT.HTML-----------------------------------*/
+
+#wrap-about {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 20px;
+}
+
 
 /*----------------------------------------------*/
 
