@@ -46,7 +46,7 @@
 ### v2.0.0
 | Giao diện 1 | Giao diện 2 |
 |:--:|:--:|
-| <img width="500" alt="example1 v2.0.0" src="My%20website/images/logo%26text/twisoh-studio_text.png" /> | <img width="500" alt="example2 v2.0.0" src="My%20website/images/logo%26text/twisoh_media.png" /> |
+| <img width="500" alt="example1 v2.0.0" src="example/example1-v2.0.0.jpeg"/> | <img width="500" alt="example2 v2.0.0" src="example/example2-v2.0.0.jpeg"/> |
 ---
 
 ## 💡 Cách chạy dự án
