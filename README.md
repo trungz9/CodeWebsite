@@ -18,12 +18,35 @@
 
 ---
 
+## 📦 Cập nhật phiên bản
+
+### 🔹 v1.0.0 — 2025-10-31
+- Hoàn thiện layout trang chính.
+- Xây dựng navbar và hiệu ứng hover.
+- Khởi tạo dự án.
+- Xây dựng HTML cơ bản.
+- Hoàn thiện cấu trúc thư mục.
+- Thêm CSS cơ bản và responsive bước đầu.
+
+### 🔹 v2.0.0 - 2026-2-19
+- Thêm chức năng chuyển trang giữa các file HTML.
+- Thiết kế header sticky.
+- Cập nhập thêm ảnh và giao diện mới.
+- Cập nhập sự kiện của studio.
+
+---
+
 ## 📸 Hình ảnh giao diện
 
+### v1.0.0
 | Giao diện 1 | Giao diện 2 |
 |:--:|:--:|
 | <img width="500" alt="Test1_pj" src="https://github.com/user-attachments/assets/56920f1f-e038-444e-9ce2-a890d4cb7739" /> | <img width="500" alt="Test2_pj" src="https://github.com/user-attachments/assets/c6f20660-cb31-4426-94cd-a9146447c80c" /> |
 
+### v2.0.0
+| Giao diện 1 | Giao diện 2 |
+|:--:|:--:|
+| <img width="500" alt="example1 v2.0.0" src="My%20website/images/logo%26text/twisoh-studio_text.png" /> | <img width="500" alt="example2 v2.0.0" src="My%20website/images/logo%26text/twisoh_media.png" /> |
 ---
 
 ## 💡 Cách chạy dự án
